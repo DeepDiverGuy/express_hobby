@@ -1,0 +1,43 @@
+<h5 class="text-center mt-5 mb-5"> You can use these APIs below to perform <a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD</a> operations. Use <a href="https://www.postman.com">Postman</a> or such to use these APIs. Don't forget to select appropriate methods (Get, Post, Put, Delete) while sending requests. </h5>
+
+<div class="text-center">
+    <table class="table table-striped table-bordered table-hover">
+  <thead>
+    <tr> 
+        <th colspan="4"> <h3><b>API Reference table</b></h3></th>
+    </tr>
+    <tr>
+      <th scope="col"><b>URL</b></th>
+      <th scope="col"><b>METHOD</b></th>
+      <th scope="col"><b>BODY</b></th>
+      <th scope="col"><b>DESCRIPTION</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="col">{HOST}/api/products</th>
+      <th scope="col">GET</th>
+      <th scope="col">Not Required</th>
+      <th scope="col">Gets the list of all the products</th>
+    </tr>
+    <tr>
+      <th scope="col">{HOST}/api/products</th>
+      <th scope="col">POST</th>
+      <th scope="col">REQUIRED <br /> Format = Json</th>
+      <th scope="col">Creates a new product according to the body</th>
+    </tr>
+    <tr>
+      <th scope="col">{HOST}/api/products/{id}</th>
+      <th scope="col">PUT</th>
+      <th scope="col">REQUIRED <br /> Format = Json</th>
+      <th scope="col">Updates a product according to the body. Product is selected according to the given uuid id in the requested URL</th>
+    </tr>
+    <tr>
+      <th scope="col">{HOST}/api/products/{id}</th>
+      <th scope="col">DELETE</th>
+      <th scope="col">Not Required</th>
+      <th scope="col">Deletes a product. Product is selected according to the given uuid id in the requested URL</th>
+    </tr>
+  </tbody>
+</table>
+</div>

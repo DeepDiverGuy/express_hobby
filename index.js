@@ -87,6 +87,16 @@ app.get('/api_reference', (request, response) => {
   );
 
 
+app.get(
+  '/aboutsite',
+  (request, response) => {
+    response.render(
+      'aboutsite',
+    )
+  }
+)
+
+
 // API routes
 app.use('/api/products', require('./api'));
 
